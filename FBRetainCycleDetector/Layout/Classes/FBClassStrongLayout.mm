@@ -15,7 +15,11 @@
 
 #import <UIKit/UIKit.h>
 
+#if __has_include("FBRetainCycleDetector-Swift.h")
+#import "FBRetainCycleDetector-Swift.h"
+#else
 #import <FBRetainCycleDetector/FBRetainCycleDetector-Swift.h>
+#endif
 
 #import "FBIvarReference.h"
 #import "FBObjectInStructReference.h"
